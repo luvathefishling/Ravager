@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing de curso online de Python e C++ focado em projetos práticos.">
+  <title>Landing · Curso Python e C++</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { 400: '#ff1440', 500: '#ff1f1f', 600: '#cc0000', 700: '#990000', 800: '#660000' } },
+          fontFamily: { sans: ['Urbanist', 'system-ui', 'sans-serif'] },
+        },
+      },
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    a {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#0b0226] font-sans text-slate-100 antialiased">
+  <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#" class="text-lg font-bold tracking-tight text-white">Dev<span class="text-brand-500">Lab</span></a>
+      <nav class="hidden items-center gap-6 md:flex" aria-label="Principal">
+        <a href="#features" class="text-sm font-medium text-slate-400 transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded-md px-1">Conteúdo</a>
+        <a href="#footer" class="text-sm font-medium text-slate-400 transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded-md px-1">Mais</a>
+      </nav>
+      <details class="relative md:hidden">
+        <summary class="inline-flex cursor-pointer list-none items-center justify-center rounded-lg border border-slate-700 p-2 text-brand-500 [&::-webkit-details-marker]:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+          <i class="fa-solid fa-bars shrink-0 text-xl leading-none" aria-hidden="true"></i>
+          <span class="sr-only">Abrir ou fechar menu</span>
+        </summary>
+        <nav class="absolute right-0 top-[calc(100%+0.5rem)] z-50 min-w-[12rem] rounded-xl border border-slate-800 bg-slate-950 py-2 shadow-xl shadow-black/50 ring-1 ring-white/5" aria-label="Principal (mobile)">
+          <a href="#features" class="block px-4 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-slate-900 hover:text-white focus-visible:bg-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-500">Conteúdo</a>
+          <a href="#cta" class="block px-4 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-slate-900 hover:text-white focus-visible:bg-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-500">Matricula</a>
+          <a href="#footer" class="block px-4 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-slate-900 hover:text-white focus-visible:bg-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-500">Mais</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900 py-20 sm:py-24">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+        <div class="text-center lg:text-left">
+          <p class="text-sm font-semibold uppercase tracking-widest text-brand-500">Curso Python e C++</p>
+          <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Aprenda Python e C++ com projetos reais e código eficiente.</h1>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-400">Do básico ao avançado, combine scripts Python com aplicações C++ para dominar duas linguagens essenciais.</p>
+          <div class="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">
+            <a href="#cta" class="inline-flex items-center justify-center rounded-full bg-brand-600 px-8 py-3.5 text-base font-semibold text-slate-950 shadow-lg shadow-brand-700/30 transition hover:bg-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-700 focus-visible:ring-offset-2 focus-visible:ring-offset-purple-900">Matricule-se</a>
+            <a href="../modulo-1-intro-setup.html" class="inline-flex items-center justify-center rounded-full border border-slate-600 px-8 py-3.5 text-base font-semibold text-slate-200 transition hover:border-slate-500 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Ver programa</a>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-2xl border border-slate-800 shadow-2xl shadow-black/40">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.6JOpShMxFKlYFiB6GrSDXgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Equipa a trabalhar em produto digital" width="900" height="600" class="aspect-video h-full w-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-slate-800 bg-slate-950 py-12" aria-label="Clientes">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <p class="mb-8 text-center text-xs font-semibold uppercase tracking-widest text-slate-500">Confiança de equipes que estudam com você</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 opacity-60 grayscale">
+          <span class="text-lg font-bold text-slate-400">Alunos Python</span>
+          <span class="text-lg font-bold text-slate-400">Desenvolvedores C++</span>
+          <span class="text-lg font-bold text-slate-400">Times de backend</span>
+          <span class="text-lg font-bold text-slate-400">Estudantes full stack</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="border-b border-slate-800 bg-slate-900/40 py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Ferramentas e conceitos para programar de verdade</h2>
+          <p class="mt-4 text-lg text-slate-400">Aprenda padrões eficientes em Python e C++ enquanto desenvolve projetos completos.</p>
+        </div>
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:-translate-y-1 hover:border-slate-600 hover:shadow-xl hover:shadow-brand-500/5">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400"><i class="fa-solid fa-bolt text-xl" aria-hidden="true"></i></div>
+            <h3 class="mt-4 text-lg font-semibold text-white">Python moderno</h3>
+            <p class="mt-2 text-slate-400">Aprenda sintaxe clara, automação de tarefas e scripts que fazem seu código trabalhar por você.</p>
+          </article>
+          <article class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:-translate-y-1 hover:border-slate-600 hover:shadow-xl hover:shadow-brand-500/5">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400"><i class="fa-solid fa-mobile-screen text-xl" aria-hidden="true"></i></div>
+            <h3 class="mt-4 text-lg font-semibold text-white">C++ eficiente</h3>
+            <p class="mt-2 text-slate-400">Garanta performance e controle de memória enquanto constrói aplicações nativas robustas.</p>
+          </article>
+          <article class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:-translate-y-1 hover:border-slate-600 hover:shadow-xl hover:shadow-brand-500/5 sm:col-span-2 lg:col-span-1">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400"><i class="fa-solid fa-palette text-xl" aria-hidden="true"></i></div>
+            <h3 class="mt-4 text-lg font-semibold text-white">Projetos hands-on</h3>
+            <p class="mt-2 text-slate-400">Prática orientada por exercícios reais para conectar teoria e mercado.</p>
+          </article>
+          <article class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:-translate-y-1 hover:border-slate-600 hover:shadow-xl hover:shadow-brand-500/5">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400"><i class="fa-solid fa-code text-xl" aria-hidden="true"></i></div>
+            <h3 class="mt-4 text-lg font-semibold text-white">Integração de linguagens</h3>
+            <p class="mt-2 text-slate-400">Combine o poder de Python e C++ para criar soluções versáteis e eficientes.</p>
+          </article>
+          <article class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:-translate-y-1 hover:border-slate-600 hover:shadow-xl hover:shadow-brand-500/5">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400"><i class="fa-solid fa-server text-xl" aria-hidden="true"></i></div>
+            <h3 class="mt-4 text-lg font-semibold text-white">Desenvolvimento de software</h3>
+            <p class="mt-2 text-slate-400">Aprenda a desenvolver aplicações de alta performance usando as melhores práticas de programação.</p>
+          </article>
+          <article class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:-translate-y-1 hover:border-slate-600 hover:shadow-xl hover:shadow-brand-500/5 sm:col-span-2 lg:col-span-1">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400"><i class="fa-solid fa-graduation-cap text-xl" aria-hidden="true"></i></div>
+            <h3 class="mt-4 text-lg font-semibold text-white">Uso da IA em projetos</h3>
+            <p class="mt-2 text-slate-400">Aprenda a utilizar inteligência artificial em seus projetos para otimizar processos e criar soluções inovadoras.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="overflow-hidden rounded-3xl bg-gradient-to-br from-brand-400 to-brand-700 p-8 shadow-2xl sm:p-12 md:p-14">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Receba o roteiro do curso</h2>
+            <p class="mt-4 text-lg text-emerald-100/90">Insira seu email e receba o plano de estudos para Python e C++ diretamente na caixa de entrada.</p>
+          </div>
+          <form class="mx-auto mt-10 flex max-w-md flex-col gap-3 sm:mx-auto sm:flex-row sm:items-end" action="#" method="post">
+            <div class="flex-1 text-left">
+              <label for="email" class="mb-1 block text-sm font-medium text-emerald-50">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" class="w-full rounded-xl border border-brand-400 bg-white/5 px-4 py-3 text-white placeholder:text-red-200/60 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500">
+            </div>
+            <button type="submit" class="rounded-xl bg-brand-700 px-8 py-3 font-semibold text-white transition hover:bg-brand-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-700 sm:shrink-0">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="border-t border-slate-800 bg-slate-950 py-12">
+    <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400">
+        <a href="#" class="hover:text-slate-200 transition">Sobre nós</a>
+    <p class="mx-auto max-w-6xl px-4 text-center text-sm text-slate-400">Todos os direitos reservados a phytonCpg© - 2026</p>
+  </footer>
+</body>
+</html>
